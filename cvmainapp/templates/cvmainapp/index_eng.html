@@ -1,0 +1,301 @@
+{% extends "cvmainapp/layout_eng.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="first-screen-wrapper">
+    <img class="first-screen-logo" src="{% static 'cvmainapp/img/Alex.svg' %}" width="178" height="150" alt="Alex logo">
+    <h1 class="first-screen-subject">Alexander Holubtsov</h1>
+    <h2 class="first-screen-subtitle lead">Strong Junior Python programmer</h2>
+    <button class="first-screen-btn-arrows" type="button" onclick="scroll_down()">
+      <span class="first-screen-icon-arrow-1"></span>
+      <span class="first-screen-icon-arrow-2"></span>
+      <span class="first-screen-icon-arrow-3"></span>
+    </button>
+  </div>
+  <section class="features" id="features">
+    <div class="features-info-wrapper">
+      <strong class="general-subtitle">Features</strong>
+      <h2 class="general-headline">About me</h2>
+      <p class="text">
+        I’m a Python developer. I can write programs, optimize applications and support web services.
+        I’m also good at creating scripts, making websites, programming telegram-bots.
+      </p>
+      <p class="text">
+        Since I’m a perfectionist, I can’t leave work unfinished.
+        I constantly strive to improve the performance of tasks.
+        I always keep clean, structured and understandable code behind me.
+      </p>
+      <p class="text">
+        In 2020, I graduated from the Kyiv National University of Technology and Design with a degree in &laquo;Computer Science&raquo;.
+        After that, I switched from studying C/C++ to working with Python.
+      </p>
+    </div>
+    <div class="features-images-box">
+      <img class="features-image-author-photo" src="{% static 'cvmainapp/img/hero-image.jpg' %}" width="544" height="360" alt="Alexander Holubtsov is pictured">
+      <img class="features-image-background-triangle" src="{% static 'cvmainapp/img/triangle.svg' %}" width="571" alt="">
+    </div>
+  </section>
+
+  <section class="work-experience" id="work_experience">
+    <strong class="general-subtitle">My professional background</strong>
+    <h2 class="general-headline">Work experience</h2>
+    <ul class="work-experience-list">
+      <li class="work-experience-item">
+        <mark class="work-experience-item-point">О1</mark>
+        <h3 class="work-experience-item-heading">
+          <span class="work-experience-item-name-1">Seogene</span>, Front-end
+        </h3>
+        <p class="work-experience-item-desc">
+          I helped make corrections to sites in production.
+        </p>
+      </li>
+      <li class="work-experience-item">
+        <mark class="work-experience-item-point">О2</mark>
+        <h3 class="work-experience-item-heading">
+          <span class="work-experience-item-name-2">Freelance</span>, Back-end
+        </h3>
+        <p class="work-experience-item-desc">
+          I used a WordPress to manage content of the sites.
+          I have programmed Telegram-bot.
+        </p>
+      </li>
+      <li class="work-experience-item">
+        <mark class="work-experience-item-point">О3</mark>
+        <h3 class="work-experience-item-heading">
+          <span class="work-experience-item-name-3">Info-Prime</span>, Full-stack
+        </h3>
+        <p class="work-experience-item-desc">
+          I was engaged in support and optimization of the accounting and registration service for energy facilities.
+          Also, my responsibilities included database administration.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="skills-underlay-1 desktop-only"></div>
+    <div class="skills-underlay-2 desktop-only"></div>
+    <!-- <div class="skills-underlay-3 desktop-only"></div> -->
+    <strong class="general-subtitle">Technologies</strong>
+    <h2 class="general-headline">Skills and abilities</h2>
+    <p class="text">
+      Even when I encounter something for the first time,
+      my passion and purposefulness make me learning new methods, functionality or other things.
+      Therefore, I’m eager to do my best to achieve intended goal.
+    </p>
+    <div class="skills-technologies-box">
+      <div class="skill-technology-python-holder">
+        <img class="skill-technology-python-icon" src="{% static 'cvmainapp/img/Python-logo.svg' %}" width="193" height="203" alt="Python logo">
+        <h3 class="inner-subtitle">Python</h3>
+        <ul class="skill-technology-python-libraries">
+          <li>asyncio</li>
+          <li>aiohttp</li>
+          <li>aiogram</li>
+        </ul>
+      </div>
+      <ul class="skills-technologies-list">
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/django.svg' %}" width="58" alt="Django logo">
+          Django
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/flask.svg' %}" width="80" alt="Flask logo">
+          Flask
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/web2py.svg' %}" width="84" alt="Web2py logo">
+          Web2py
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/docker.svg' %}" width="130" alt="Docker logo">
+          Docker
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/tag_icon.svg' %}" width="99" alt="HTML/CSS/JS logo">
+          HTML / CSS / JS
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/sql_icon.svg' %}" width="63" alt="SQL logo">
+          SQL
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/api_icon.svg' %}" width="86" alt="API logo">
+          API
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/oop_icon.svg' %}" width="74" alt="ООП logo">
+          ООП
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="github">
+    <h2 class="github-title eng-text">Check my GitHub</h2>
+    <a class="github-link btn-large" href="https://github.com/AlexanderGolDeluxe" target="_blank">Go to link</a>
+    <img class="github-icon" src="{% static 'cvmainapp/img/github.svg' %}" width="372" height="373" alt="GitHub logo">
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="projects-underlay"></div>
+    <div class="projects-block-left">
+      <div class="projects-text">
+        <strong class="general-subtitle">My projects</strong>
+        <h2 class="general-headline">Work that I’ve done for the past 2 years</h2>
+      </div>
+      <figure class="project-preview">
+        <a class="project-preview-link" href="https://sm.e-svitlo.com.ua" target="_blank">
+          <img src="{% static 'cvmainapp/img/projects/e-svitlo.jpg' %}" width="636" height="620" alt="Project E-Svitlo">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">E-Svitlo</h3>
+          <p class="project-preview-text">The existing service will help to quickly resolve issues related to supply of electricity.</p>
+        </figcaption>
+      </figure>
+      <figure class="project-preview">
+        <a class="project-preview-link" href="{% static 'cvmainapp/gllacy/index.html' %}">
+          <img src="{% static 'cvmainapp/img/projects/gllacy.jpg' %}" width="636" height="620" alt="Project Gllacy">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">Gllacy Shop</h3>
+          <p class="project-preview-text">Gllacy Shop is an online and offline store selling ice cream of its own production by weight.</p>
+        </figcaption>
+      </figure>
+      <figure class="project-preview js-show-more" hidden>
+        <a class="project-preview-link" href="{% static 'cvmainapp/nerds/index.html' %}">
+          <img src="{% static 'cvmainapp/img/projects/nerds.jpg' %}" width="636" height="620" alt="Project Nerds">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">Nerds</h3>
+          <p class="project-preview-text">Mathematically accurate design for your website or mobile application.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="projects-block-right">
+      <figure class="project-preview">
+        <a class="project-preview-link" href="{% static 'cvmainapp/sedona/index.html' %}">
+          <img src="{% static 'cvmainapp/img/projects/sedona.jpg' %}" width="636" height="620" alt="Project Sedona">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">Welcome to the gorgeous Sedona</h3>
+          <p class="project-preview-text">Sedona is a small town in Arizona, which deserves more!</p>
+        </figcaption>
+      </figure>
+      <figure class="project-preview">
+        <a class="project-preview-link" href="{% static 'cvmainapp/device/index.html' %}">
+          <img src="{% static 'cvmainapp/img/projects/device.jpg' %}" width="636" height="620" alt="Project Device">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">Device</h3>
+          <p class="project-preview-text">A huge selection of gadgets will not leave indifferent the geek that is in each of us.</p>
+        </figcaption>
+      </figure>
+      <figure class="project-preview js-show-more" hidden>
+        <a class="project-preview-link" href="{% static 'cvmainapp/technomart/index.html' %}">
+          <img src="{% static 'cvmainapp/img/projects/technomart.jpg' %}" width="636" height="620" alt="Project Technomart">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">Technomart</h3>
+          <p class="project-preview-text">Online store of building materials and repair tools.</p>
+        </figcaption>
+      </figure>
+      <div class="projects-more-btn-wrapper">
+        <button class="projects-all btn-large" onclick="show_more(this)" type="button">Show more</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="principles">
+    <strong class="general-subtitle">My principles</strong>
+    <h2 class="general-headline">This is what important for me</h2>
+    <ul class="principles-list">
+      <li class="principle-item">
+        <img class="principle-item-article accent-1" src="{% static 'cvmainapp/img/principle-background-1.png' %}" width="360" height="336" alt="">
+        <h3 class="principle-item-heading inner-subtitle eng-text">People are more important than processes</h3>
+        <p class="principle-item-text">
+          I work with real people, not positions.
+          Therefore, it is important for me to make the interaction comfortable while developing both myself and those who work with me.
+        </p>
+      </li>
+      <li class="principle-item">
+        <img class="principle-item-article accent-2" src="{% static 'cvmainapp/img/principle-background-2.png' %}" width="360" height="336" alt="">
+        <h3 class="principle-item-heading inner-subtitle eng-text">Openness</h3>
+        <p class="principle-item-text">
+          I believe that I know almost nothing about the world around me.
+          This allows me to embrace new experiences and admit my mistakes.
+        </p>
+      </li>
+      <li class="principle-item">
+        <img class="principle-item-article accent-3" src="{% static 'cvmainapp/img/principle-background-3.png' %}" width="360" height="336" alt="">
+        <h3 class="principle-item-heading inner-subtitle eng-text">Consciousness</h3>
+        <p class="principle-item-text">
+          I know exactly what I’m doing and why I’m doing it.
+          If I cannot explain why I’m doing this, then I stop doing it.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="contacts-info-wrapper">
+      <strong class="general-subtitle">Contact</strong>
+      <h2 class="general-headline">Get into contact with me</h2>
+      <p class="contacts-text text">
+        Now that you know a lot about me,
+        please let me know in any convenient way or leave your contacts if you are interested to work with me.
+      </p>
+      <a class="contacts-link lead" href="tel:+380961110175">+38 (096) 111-01-75</a>
+      <a class="contacts-link lead" href="mailto:sanya.gol.x@gmail.com">sanya.gol.x@gmail.com</a>
+      <ul class="contacts-socials-list">
+        <li class="contacts-social-item">
+          <a class="contacts-social-link" href="https://t.me/SanyaGTR" target="_blank">
+            <img src="{% static 'cvmainapp/img/telegram.png' %}" width="41" height="41" alt="Telegram icon">
+          </a>
+        </li>
+        <li class="contacts-social-item">
+          <a class="contacts-social-link" href="skype:sanya.gol.x?chat" target="_blank">
+            <img src="{% static 'cvmainapp/img/skype.svg' %}" width="41" height="41" alt="Skype icon">
+          </a>
+        </li>
+        <li class="contacts-social-item">
+          <a class="contacts-social-link" href="https://www.facebook.com/sanya.gol.x" target="_blank">
+            <img src="{% static 'cvmainapp/img/facebook.svg' %}" width="41" height="41" alt="Facebook icon">
+          </a>
+        </li>
+        <li class="contacts-social-item">
+          <a class="contacts-social-link" href="https://www.linkedin.com/in/alexander-holubtsov" target="_blank">
+            <img src="{% static 'cvmainapp/img/linkedin.svg' %}" width="41" height="41" alt="LinkedIn icon">
+          </a>
+        </li>
+        <li class="contacts-social-item">
+          <a class="contacts-social-link" href="viber://chat?number=+380961110175" target="_blank">
+            <img src="{% static 'cvmainapp/img/viber.png' %}" width="41" height="41" alt="Viber icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+    {% if contacts_saved %}
+      <div class="neon-message">
+        <h3 class="gradient-text">Thank you! The data was sent successfully</h3>
+        <a class="refresh-link" title="Click to refresh the form" href="{% url 'refresh_form' %}">
+          <svg class="refresh-icon" width="75" height="75" viewBox="0 0 140 153" fill="#004EFF" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M134.852 88.6738C137.548 88.9097 139.56 91.2908 139.136 93.9636C136.913 107.985 130.469 121.042 120.608 131.362C109.614 142.866 95.03 150.281 79.258 152.385C63.4859 154.49 47.4675 151.158 33.8427 142.939C20.2179 134.72 9.79982 122.104 4.30549 107.171C-1.18884 92.2377 -1.43156 75.8783 3.61734 60.7887C8.66624 45.6991 18.7055 32.7799 32.0804 24.1603C45.4554 15.5408 61.3679 11.7352 77.1955 13.3708C91.3936 14.838 104.763 20.6053 115.544 29.8422C117.599 31.603 117.61 34.7202 115.71 36.6471V36.6471C113.81 38.574 110.719 38.5782 108.644 36.841C99.4654 29.156 88.1698 24.3571 76.1881 23.1189C62.5764 21.7123 48.8916 24.9851 37.3892 32.3979C25.8867 39.8107 17.253 50.9212 12.9109 63.8983C8.56886 76.8753 8.77759 90.9444 13.5027 103.787C18.2278 116.629 27.1874 127.479 38.9047 134.547C50.622 141.616 64.3979 144.481 77.9618 142.671C91.5258 140.861 104.068 134.484 113.523 124.591C121.845 115.883 127.336 104.907 129.346 93.1056C129.8 90.4378 132.156 88.438 134.852 88.6738V88.6738Z"/>
+            <path
+              d="M121.344 43.3992C123.519 43.0156 124.972 40.941 124.588 38.7654L118.337 3.31233C117.953 1.13676 115.879 -0.315917 113.703 0.0676959C111.528 0.451309 110.075 2.52594 110.459 4.70152L116.015 36.2154L84.5014 41.7721C82.3259 42.1557 80.8732 44.2304 81.2568 46.4059C81.6404 48.5815 83.715 50.0342 85.8906 49.6506L121.344 43.3992ZM110.045 36.9177L118.355 42.7366L122.943 36.1834L114.633 30.3645L110.045 36.9177Z"/>
+          </svg>
+        </a>
+      </div>
+    {% else %}
+      <form class="contacts-form" method="POST">
+        {% csrf_token %}
+        {% for field in contacts_form %}
+          <label class="contacts-form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+          {{ field }}
+        {% endfor %}
+        <button class="contacts-form-submit btn-large" type="submit">Let’s get started</button>
+      </form>
+    {% endif %}
+  </section>
+
+{% endblock %}

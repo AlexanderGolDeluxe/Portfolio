@@ -1,0 +1,294 @@
+{% extends "cvmainapp/layout.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="first-screen-wrapper">
+    <img class="first-screen-logo" src="{% static 'cvmainapp/img/Alex.svg' %}" width="178" height="150" alt="Логотип Alex">
+    <h1 class="first-screen-subject">Александр Голубцов</h1>
+    <h2 class="first-screen-subtitle lead">Strong Junior Python программист</h2>
+    <button class="first-screen-btn-arrows" type="button" onclick="scroll_down()">
+      <span class="first-screen-icon-arrow-1"></span>
+      <span class="first-screen-icon-arrow-2"></span>
+      <span class="first-screen-icon-arrow-3"></span>
+    </button>
+  </div>
+  <section class="features" id="features">
+    <div class="features-info-wrapper">
+      <strong class="general-subtitle">Характеристика</strong>
+      <h2 class="general-headline">Oбо мне</h2>
+      <p class="text">
+        Я Python-разработчик &mdash; пишу, оптимизирую, поддерживаю веб-сервисы, программы и приложения.
+        Также умею создавать скрипты, верстать сайты, программировать telegram-ботов.
+      </p>
+      <p class="text">
+        Работаю в тандеме со своим внутренним перфекционистом, благодаря которому не могу оставить работу незаконченной,
+        постоянно стремлюсь совершенствовать её выполнение, всегда сохраняю после себя чистый, структурированный и понятный код.
+      </p>
+      <p class="text">
+        В 2020 я закончил Киевский национальный университет технологий и дизайна по специальности &laquo;Компьютерные науки&raquo;,
+        после чего с изучения С/С++ перешёл к работе на Python.
+      </p>
+    </div>
+    <div class="features-images-box">
+      <img class="features-image-author-photo" src="{% static 'cvmainapp/img/hero-image.jpg' %}" width="544" height="360" alt="Фотография Александра Голубцова">
+      <img class="features-image-background-triangle" src="{% static 'cvmainapp/img/triangle.svg' %}" width="571" alt="">
+    </div>
+  </section>
+
+  <section class="work-experience" id="work_experience">
+    <strong class="general-subtitle">Профессиональный стаж</strong>
+    <h2 class="general-headline">Oпыт работы</h2>
+    <ul class="work-experience-list">
+      <li class="work-experience-item">
+        <mark class="work-experience-item-point">О1</mark>
+        <h3 class="work-experience-item-heading">
+          <span class="work-experience-item-name-1">Seogene</span>, Front-end
+        </h3>
+        <p class="work-experience-item-desc">Я вносил изменения согласно ТЗ на сайтах вышедших в продакшн.</p>
+      </li>
+      <li class="work-experience-item">
+        <mark class="work-experience-item-point">О2</mark>
+        <h3 class="work-experience-item-heading">
+          <span class="work-experience-item-name-2">Freelance</span>, Back-end
+        </h3>
+        <p class="work-experience-item-desc">Я занимался переносом сайтов на WordPress. Создавал Telegram-бота.</p>
+      </li>
+      <li class="work-experience-item">
+        <mark class="work-experience-item-point">О3</mark>
+        <h3 class="work-experience-item-heading">
+          <span class="work-experience-item-name-3">Info-Prime</span>, Full-stack
+        </h3>
+        <p class="work-experience-item-desc">Поддержка и адаптация сервиса учёта-регистрации энергообъектов, администрирование баз данных.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="skills-underlay-1 desktop-only"></div>
+    <div class="skills-underlay-2 desktop-only"></div>
+    <!-- <div class="skills-underlay-3 desktop-only"></div> -->
+    <strong class="general-subtitle">Технологии</strong>
+    <h2 class="general-headline">Навыки и умения</h2>
+    <p class="text">
+      Даже когда я сталкиваюсь с чем-то впервые,
+      интерес к поставленной задаче и целеустремлённость заставляют меня разобраться в новых условиях,
+      методах или функциональности, чтобы добиться намеченной цели.
+    </p>
+    <div class="skills-technologies-box">
+      <div class="skill-technology-python-holder">
+        <img class="skill-technology-python-icon" src="{% static 'cvmainapp/img/Python-logo.svg' %}" width="193" height="203" alt="Логотип Python">
+        <h3 class="inner-subtitle">Python</h3>
+        <ul class="skill-technology-python-libraries">
+          <li>asyncio</li>
+          <li>aiohttp</li>
+          <li>aiogram</li>
+        </ul>
+      </div>
+      <ul class="skills-technologies-list">
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/django.svg' %}" width="58" alt="Логотип Django">
+          Django
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/flask.svg' %}" width="80" alt="Логотип Flask">
+          Flask
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/web2py.svg' %}" width="84" alt="Логотип Web2py">
+          Web2py
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/docker.svg' %}" width="130" alt="Логотип Docker">
+          Docker
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/tag_icon.svg' %}" width="99" alt="Логотип HTML/CSS/JS">
+          HTML / CSS / JS
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/sql_icon.svg' %}" width="63" alt="Логотип SQL">
+          SQL
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/api_icon.svg' %}" width="86" alt="Логотип API">
+          API
+        </li>
+        <li class="skill-technology-item">
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/oop_icon.svg' %}" width="74" alt="Логотип ООП">
+          ООП
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="github">
+    <h2 class="github-title">Я на GitHub</h2>
+    <a class="github-link btn-large" href="https://github.com/AlexanderGolDeluxe" target="_blank">Перейти</a>
+    <img class="github-icon" src="{% static 'cvmainapp/img/github.svg' %}" width="372" height="373" alt="Логотип GitHub">
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="projects-underlay"></div>
+    <div class="projects-block-left">
+      <div class="projects-text">
+        <strong class="general-subtitle">Мои проекты</strong>
+        <h2 class="general-headline">Работы, которые я реализовал за последние 2 года</h2>
+      </div>
+      <figure class="project-preview">
+        <a class="project-preview-link" href="https://sm.e-svitlo.com.ua">
+          <img src="{% static 'cvmainapp/img/projects/e-svitlo.jpg' %}" width="636" height="620" alt="Проект E-Svitlo">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">E-Svitlo</h3>
+          <p class="project-preview-text">Існуючий сервіс допоможе швидко вирішити питання пов’язані із постачанням електричної енергії.</p>
+        </figcaption>
+      </figure>
+      <figure class="project-preview">
+        <a class="project-preview-link" href="{% static 'cvmainapp/gllacy/index.html' %}">
+          <img src="{% static 'cvmainapp/img/projects/gllacy.jpg' %}" width="636" height="620" alt="Проект Глэйси">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">Магазин Глэйси</h3>
+          <p class="project-preview-text">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес.</p>
+        </figcaption>
+      </figure>
+      <figure class="project-preview js-show-more" hidden>
+        <a class="project-preview-link" href="{% static 'cvmainapp/nerds/index.html' %}">
+          <img src="{% static 'cvmainapp/img/projects/nerds.jpg' %}" width="636" height="620" alt="Проект Нёрдс">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">Нёрдс</h3>
+          <p class="project-preview-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="projects-block-right">
+      <figure class="project-preview">
+        <a class="project-preview-link" href="{% static 'cvmainapp/sedona/index.html' %}">
+          <img src="{% static 'cvmainapp/img/projects/sedona.jpg' %}" width="636" height="620" alt="Проект Седона">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">Седона</h3>
+          <p class="project-preview-text">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
+        </figcaption>
+      </figure>
+      <figure class="project-preview">
+        <a class="project-preview-link" href="{% static 'cvmainapp/device/index.html' %}">
+          <img src="{% static 'cvmainapp/img/projects/device.jpg' %}" width="636" height="620" alt="Проект Девайс">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">Девайс</h3>
+          <p class="project-preview-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        </figcaption>
+      </figure>
+      <figure class="project-preview js-show-more" hidden>
+        <a class="project-preview-link" href="{% static 'cvmainapp/technomart/index.html' %}">
+          <img src="{% static 'cvmainapp/img/projects/technomart.jpg' %}" width="636" height="620" alt="Проект Техномарт">
+        </a>
+        <figcaption class="project-preview-desc">
+          <h3 class="project-preview-caption">Техномарт</h3>
+          <p class="project-preview-text">Интернет-магазин строительных материалов и инструментов для ремонта.</p>
+        </figcaption>
+      </figure>
+      <div class="projects-more-btn-wrapper">
+        <button class="projects-all btn-large" onclick="show_more(this)" type="button">Посмотреть всё</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="principles">
+    <strong class="general-subtitle">Ценности</strong>
+    <h2 class="general-headline">Принципы, которыми я руководствуюсь в работе</h2>
+    <ul class="principles-list">
+      <li class="principle-item">
+        <img class="principle-item-article accent-1" src="{% static 'cvmainapp/img/principle-background-1.png' %}" width="360" height="336" alt="">
+        <h3 class="principle-item-heading inner-subtitle">Люди важнее процессов</h3>
+        <p class="principle-item-text">
+          Я работаю с живыми людьми, а не должностями.
+          Потому для меня важно сделать взаимодействие комфортным при этом развивая как себя,
+          так и тех кто работает со мной.
+        </p>
+      </li>
+      <li class="principle-item">
+        <img class="principle-item-article accent-2" src="{% static 'cvmainapp/img/principle-background-2.png' %}" width="360" height="336" alt="">
+        <h3 class="principle-item-heading inner-subtitle">Открытость</h3>
+        <p class="principle-item-text">
+          Я верю в то, что почти ничего не знаю о мире вокруг.
+          Это позволяет принимать новый опыт и признавать свои ошибки.
+        </p>
+      </li>
+      <li class="principle-item">
+        <img class="principle-item-article accent-3" src="{% static 'cvmainapp/img/principle-background-3.png' %}" width="360" height="336" alt="">
+        <h3 class="principle-item-heading inner-subtitle">Осознанность</h3>
+        <p class="principle-item-text">
+          Я точно знаю что я делаю и зачем это делаю.
+          Если я не могу объяснить зачем я это делаю,
+          то однозначно прекращаю этим заниматься.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="contacts-info-wrapper">
+      <strong class="general-subtitle">Контакты</strong>
+      <h2 class="general-headline">Свяжитесь со мной</h2>
+      <p class="contacts-text text">
+        Если Вы бы хотели пообщаться по поводу работы,
+        свяжитесь со мной любым удобным способом или оставьте свои контакты.
+      </p>
+      <a class="contacts-link lead" href="tel:+380961110175">+38 (096) 111-01-75</a>
+      <a class="contacts-link lead" href="mailto:sanya.gol.x@gmail.com">sanya.gol.x@gmail.com</a>
+      <ul class="contacts-socials-list">
+        <li class="contacts-social-item">
+          <a class="contacts-social-link" href="https://t.me/SanyaGTR" target="_blank">
+            <img src="{% static 'cvmainapp/img/telegram.png' %}" width="41" height="41" alt="Иконка Telegram">
+          </a>
+        </li>
+        <li class="contacts-social-item">
+          <a class="contacts-social-link" href="skype:sanya.gol.x?chat" target="_blank">
+            <img src="{% static 'cvmainapp/img/skype.svg' %}" width="41" height="41" alt="Иконка Skype">
+          </a>
+        </li>
+        <li class="contacts-social-item">
+          <a class="contacts-social-link" href="https://www.facebook.com/sanya.gol.x" target="_blank">
+            <img src="{% static 'cvmainapp/img/facebook.svg' %}" width="41" height="41" alt="Иконка Facebook">
+          </a>
+        </li>
+        <li class="contacts-social-item">
+          <a class="contacts-social-link" href="https://www.linkedin.com/in/alexander-holubtsov" target="_blank">
+            <img src="{% static 'cvmainapp/img/linkedin.svg' %}" width="41" height="41" alt="Иконка LinkedIn">
+          </a>
+        </li>
+        <li class="contacts-social-item">
+          <a class="contacts-social-link" href="viber://chat?number=+380961110175" target="_blank">
+            <img src="{% static 'cvmainapp/img/viber.png' %}" width="41" height="41" alt="Иконка Viber">
+          </a>
+        </li>
+      </ul>
+    </div>
+    {% if contacts_saved %}
+      <div class="neon-message">
+        <h3 class="gradient-text">Спасибо! Данные отправлены успешно</h3>
+        <a class="refresh-link" title="Нажмите чтобы повторно заполнить форму" href="{% url 'refresh_form' %}">
+          <svg class="refresh-icon" width="75" height="75" viewBox="0 0 140 153" fill="#004EFF" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M134.852 88.6738C137.548 88.9097 139.56 91.2908 139.136 93.9636C136.913 107.985 130.469 121.042 120.608 131.362C109.614 142.866 95.03 150.281 79.258 152.385C63.4859 154.49 47.4675 151.158 33.8427 142.939C20.2179 134.72 9.79982 122.104 4.30549 107.171C-1.18884 92.2377 -1.43156 75.8783 3.61734 60.7887C8.66624 45.6991 18.7055 32.7799 32.0804 24.1603C45.4554 15.5408 61.3679 11.7352 77.1955 13.3708C91.3936 14.838 104.763 20.6053 115.544 29.8422C117.599 31.603 117.61 34.7202 115.71 36.6471V36.6471C113.81 38.574 110.719 38.5782 108.644 36.841C99.4654 29.156 88.1698 24.3571 76.1881 23.1189C62.5764 21.7123 48.8916 24.9851 37.3892 32.3979C25.8867 39.8107 17.253 50.9212 12.9109 63.8983C8.56886 76.8753 8.77759 90.9444 13.5027 103.787C18.2278 116.629 27.1874 127.479 38.9047 134.547C50.622 141.616 64.3979 144.481 77.9618 142.671C91.5258 140.861 104.068 134.484 113.523 124.591C121.845 115.883 127.336 104.907 129.346 93.1056C129.8 90.4378 132.156 88.438 134.852 88.6738V88.6738Z"/>
+            <path
+              d="M121.344 43.3992C123.519 43.0156 124.972 40.941 124.588 38.7654L118.337 3.31233C117.953 1.13676 115.879 -0.315917 113.703 0.0676959C111.528 0.451309 110.075 2.52594 110.459 4.70152L116.015 36.2154L84.5014 41.7721C82.3259 42.1557 80.8732 44.2304 81.2568 46.4059C81.6404 48.5815 83.715 50.0342 85.8906 49.6506L121.344 43.3992ZM110.045 36.9177L118.355 42.7366L122.943 36.1834L114.633 30.3645L110.045 36.9177Z"/>
+          </svg>
+        </a>
+      </div>
+    {% else %}
+      <form class="contacts-form" method="POST">
+        {% csrf_token %}
+        {% for field in contacts_form %}
+          <label class="contacts-form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+          {{ field }}
+        {% endfor %}
+        <button class="contacts-form-submit btn-large" type="submit">Let’s get started</button>
+      </form>
+    {% endif %}
+  </section>
+
+{% endblock %}
