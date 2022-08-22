@@ -1,12 +1,11 @@
 from datetime import datetime
 
 from django.shortcuts import render, redirect
-from django.core.handlers.wsgi import WSGIRequest
 
 from .forms import ContactsForm
 
 
-def index(request: WSGIRequest, language=""):
+def index(request, language=""):
     template_suffix = "_eng" if language else ""
     if request.method == "POST":
         contacts_form = ContactsForm(request.POST)
@@ -24,6 +23,7 @@ def index(request: WSGIRequest, language=""):
     return render(request, f"cvmainapp/index{template_suffix}.html", context)
 
 
-def refresh_form(request):
+def refresh_form(request, language=""):
+    template_suffix = "/eng" if language else ""
     request.session.flush()
-    return redirect("/#contacts")
+    return redirect(template_suffix + "/#contacts")
