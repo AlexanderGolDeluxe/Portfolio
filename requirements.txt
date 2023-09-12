@@ -1,3 +1,4 @@
-Django==4.0.5
-environs==9.5.0
-whitenoise==6.2.0
+Django
+environs
+gunicorn
+whitenoise
