@@ -5,7 +5,7 @@
   <div class="first-screen-wrapper">
     <img class="first-screen-logo" src="{% static 'cvmainapp/img/Alex.svg' %}" width="178" height="150" alt="Alex logo">
     <h1 class="first-screen-subject">Alexander Holubtsov</h1>
-    <h2 class="first-screen-subtitle lead">Strong Junior Python programmer</h2>
+    <h2 class="first-screen-subtitle lead">Middle Python programmer</h2>
     <button class="first-screen-btn-arrows" type="button" onclick="scroll_down()">
       <span class="first-screen-icon-arrow-1"></span>
       <span class="first-screen-icon-arrow-2"></span>
@@ -38,35 +38,34 @@
 
   <section class="work-experience" id="work_experience">
     <strong class="general-subtitle">My professional background</strong>
-    <h2 class="general-headline">Work experience</h2>
+    <h2 class="general-headline">{{ experience_years }} of work experience</h2>
     <ul class="work-experience-list">
       <li class="work-experience-item">
         <mark class="work-experience-item-point">О1</mark>
         <h3 class="work-experience-item-heading">
-          <span class="work-experience-item-name-1">Seogene</span>, Front-end
+          <a class="work-experience-item-name-3" href="https://info-prime.com.ua/en" target="_blank">Info-Prime</a>, Full-stack
         </h3>
         <p class="work-experience-item-desc">
-          I helped make corrections to sites in production.
+          I engaged in support and optimization of accounting-registration service for energy facilities.
+          Also, my responsibilities included database administration.
         </p>
       </li>
       <li class="work-experience-item">
         <mark class="work-experience-item-point">О2</mark>
         <h3 class="work-experience-item-heading">
-          <span class="work-experience-item-name-2">Freelance</span>, Back-end
+          <a class="work-experience-item-name-2" href="https://xserver.ua/en" target="_blank">XServer</a>, Full-stack
         </h3>
         <p class="work-experience-item-desc">
-          I used a WordPress to manage content of the sites.
-          I have programmed Telegram-bot.
+          I migrated an existing project to asynchronous framework with transition to a non-relational database model.
         </p>
       </li>
       <li class="work-experience-item">
         <mark class="work-experience-item-point">О3</mark>
         <h3 class="work-experience-item-heading">
-          <span class="work-experience-item-name-3">Info-Prime</span>, Full-stack
+          <a class="work-experience-item-name-1" href="https://www.auchan-retail.com" target="_blank">Auchan Retail</a>, Back-end
         </h3>
         <p class="work-experience-item-desc">
-          I was engaged in support and optimization of the accounting and registration service for energy facilities.
-          Also, my responsibilities included database administration.
+          I developed structures and architecture of logistics services, and also created scripts to automate processes.
         </p>
       </li>
     </ul>
@@ -87,11 +86,6 @@
       <div class="skill-technology-python-holder">
         <img class="skill-technology-python-icon" src="{% static 'cvmainapp/img/python-logo.svg' %}" width="193" height="203" alt="Python logo">
         <h3 class="inner-subtitle">Python</h3>
-        <ul class="skill-technology-python-libraries">
-          <li>asyncio</li>
-          <li>aiohttp</li>
-          <li>aiogram</li>
-        </ul>
       </div>
       <ul class="skills-technologies-list">
         <li class="skill-technology-item">
@@ -103,8 +97,8 @@
           Flask
         </li>
         <li class="skill-technology-item">
-          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/web2py.svg' %}" width="84" alt="Web2py logo">
-          Web2py
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/fastapi.svg' %}" width="84" alt="FastAPI logo">
+          FastAPI
         </li>
         <li class="skill-technology-item">
           <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/docker.svg' %}" width="130" alt="Docker logo">

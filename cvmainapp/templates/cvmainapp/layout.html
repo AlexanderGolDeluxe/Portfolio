@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" href="{% static 'cvmainapp/img/icons/180.png' %}">
   <link rel="manifest" href="{% static 'cvmainapp/manifest.webmanifest' %}">
   <link rel="stylesheet" href="{% static 'cvmainapp/css/normalize.min.css' %}">
-  <link rel="stylesheet" href="{% static 'cvmainapp/css/style.min.css' %}">
+  <link rel="stylesheet" href="{% static 'cvmainapp/css/style.css' %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -31,7 +31,7 @@
     </button>
     <div class="link-change-lang-box desktop-only">
       <a class="link-change-lang" href="{% url 'index_page' 'eng' %}">
-        <img class="link-change-lang-icon" src="{% static 'cvmainapp/img/eng.svg' %}" width="36" height="36" alt="Флаг США">
+        <img class="link-change-lang-icon" src="{% static 'cvmainapp/img/eng.svg' %}" width="28" height="28" alt="Флаг США">
         eng
       </a>
     </div>
@@ -46,7 +46,7 @@
       </ul>
       <div class="link-change-lang-box mobile-only">
         <a class="link-change-lang" href="{% url 'index_page' 'eng' %}">
-          <img class="link-change-lang-icon" src="{% static 'cvmainapp/img/eng.svg' %}" width="36" height="36" alt="Флаг США">
+          <img class="link-change-lang-icon" src="{% static 'cvmainapp/img/eng.svg' %}" width="30" height="30" alt="Флаг США">
           eng
         </a>
       </div>
@@ -54,8 +54,8 @@
   </header>
   
   <main class="container">
-    <div class="first-screen-underlay-1"></div>
-    <div class="first-screen-underlay-2"></div>
+    <!-- <div class="first-screen-underlay-1"></div>
+    <div class="first-screen-underlay-2"></div> -->
     {% block content %}
     {% endblock %}
     <hr class="container-bottom-separator">

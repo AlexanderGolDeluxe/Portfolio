@@ -29,7 +29,7 @@
 :root {
   --basic-white: #FFFFFF;
   --basic-black: #000000;
-  --site-background: #1F1F1F;
+  --site-background: #161616;
   --section-text-paragraph: #F0F0F0;
   --button-large-fill: #5221E6;
   --figure-project-preview: #181823;
@@ -57,6 +57,9 @@ body {
   margin: 0;
   color: var(--basic-white);
   background-color: var(--site-background);
+  background-image: url("../img/first_screen_background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden;
 }
 
@@ -251,7 +254,7 @@ mark {
   height: 100vh;
   line-height: 15px;
   background-color: var(--site-background);
-  box-shadow: 1px 0px 30px rgba(209, 209, 209, 0.2);
+  box-shadow: 1px 0px 20px 0px rgba(209, 209, 209, 0.10);
 }
 
 .link-change-lang-box {
@@ -271,7 +274,7 @@ mark {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-transform: uppercase;
+  font-size: 16px;
   border-radius: 5px;
   color: var(--text-link-change-lang);
 }
@@ -546,11 +549,12 @@ mark {
 .skills-underlay-2 {
   position: absolute;
   justify-self: center;
-  width: 1546px;
-  height: 737.65px;
+  width: 1311px;
+  height: 626px;
   z-index: -1;
-  background: rgba(82, 33, 230, 0.1);
-  filter: blur(319px);
+  border-radius: 1311px;
+  background: rgba(82, 33, 230, 0.10);
+  filter: blur(300px);
 }
 
 .skills-underlay-1 {
@@ -558,7 +562,7 @@ mark {
 }
 
 .skills-underlay-2 {
-  top: 140px;
+  top: 200px;
 }
 
 .skills-underlay-3 {
@@ -607,6 +611,10 @@ mark {
   flex-wrap: wrap;
   width: 800px;
   height: 340px;
+  background-image: url("../img/skills_background_lines.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .skill-technology-item {
@@ -623,11 +631,6 @@ mark {
   padding-bottom: 15px;
   text-align: center;
   box-sizing: border-box;
-  border-right: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-.skill-technology-item:nth-child(-n + 4) {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .skill-technology-item:nth-child(4n) {
@@ -966,7 +969,7 @@ mark {
 
 /* ———————————— Mobile version ———————————— */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) or (max-height: 600px) {
 
   /* Global */
 
@@ -1319,6 +1322,7 @@ mark {
   .skills-technologies-list {
     width: 100%;
     height: auto;
+    background-image: none;
   }
 
   .skill-technology-item {
@@ -1326,6 +1330,11 @@ mark {
     height: 160px;
     padding: 18px 0;
     justify-content: space-between;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .skill-technology-item:nth-child(-n + 4) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   }
 
   .skill-technology-item:nth-last-child(-n + 2) {
@@ -1487,7 +1496,9 @@ mark {
 
   /* Skills */
 
-  .skills-underlay-2 { top: 340px }
+  .skills-underlay-1 { top: 40px }
+
+  .skills-underlay-2 { top: 440px }
 
   .skills .text { margin: 17px 0 38px }
 
@@ -1498,6 +1509,10 @@ mark {
   .skills-technologies-list { width: 100% }
 
   .skill-technology-item { width: 25% }
+
+  @media (max-width: 927px) {
+    .skills-technologies-list{ background-size: contain }
+  }
 
   /* GitHub */
 

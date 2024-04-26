@@ -5,7 +5,7 @@
   <div class="first-screen-wrapper">
     <img class="first-screen-logo" src="{% static 'cvmainapp/img/Alex.svg' %}" width="178" height="150" alt="Логотип Alex">
     <h1 class="first-screen-subject">Александр Голубцов</h1>
-    <h2 class="first-screen-subtitle lead">Strong Junior Python программист</h2>
+    <h2 class="first-screen-subtitle lead">Middle Python программист</h2>
     <button class="first-screen-btn-arrows" type="button" onclick="scroll_down()">
       <span class="first-screen-icon-arrow-1"></span>
       <span class="first-screen-icon-arrow-2"></span>
@@ -37,28 +37,34 @@
 
   <section class="work-experience" id="work_experience">
     <strong class="general-subtitle">Профессиональный стаж</strong>
-    <h2 class="general-headline">Oпыт работы</h2>
+    <h2 class="general-headline">{{ experience_years }} опыта работы</h2>
     <ul class="work-experience-list">
       <li class="work-experience-item">
         <mark class="work-experience-item-point">О1</mark>
         <h3 class="work-experience-item-heading">
-          <span class="work-experience-item-name-1">Seogene</span>, Front-end
+          <a class="work-experience-item-name-3" href="https://info-prime.com.ua/ru" target="_blank">Info-Prime</a>, Full-stack
         </h3>
-        <p class="work-experience-item-desc">Я вносил изменения согласно ТЗ на сайтах вышедших в продакшн.</p>
+        <p class="work-experience-item-desc">
+          Поддержка и адаптация сервиса учёта-регистрации энергообъектов, администрирование баз данных.
+        </p>
       </li>
       <li class="work-experience-item">
         <mark class="work-experience-item-point">О2</mark>
         <h3 class="work-experience-item-heading">
-          <span class="work-experience-item-name-2">Freelance</span>, Back-end
+          <a class="work-experience-item-name-2" href="https://xserver.ua/ru" target="_blank">XServer</a>, Full-stack
         </h3>
-        <p class="work-experience-item-desc">Я занимался переносом сайтов на WordPress. Создавал Telegram-бота.</p>
+        <p class="work-experience-item-desc">
+          Перенос действующего проекта на асинхронный фреймворк вместе с переходом на нереляционную модель базы данных.
+        </p>
       </li>
       <li class="work-experience-item">
         <mark class="work-experience-item-point">О3</mark>
         <h3 class="work-experience-item-heading">
-          <span class="work-experience-item-name-3">Info-Prime</span>, Full-stack
+          <a class="work-experience-item-name-1" href="https://www.auchan-retail.com" target="_blank">Auchan Retail</a>, Back-end
         </h3>
-        <p class="work-experience-item-desc">Поддержка и адаптация сервиса учёта-регистрации энергообъектов, администрирование баз данных.</p>
+        <p class="work-experience-item-desc">
+          Разработка структуры и архитектуры сервиса логистики, а также создание скриптов для автоматизации процессов.
+        </p>
       </li>
     </ul>
   </section>
@@ -78,11 +84,6 @@
       <div class="skill-technology-python-holder">
         <img class="skill-technology-python-icon" src="{% static 'cvmainapp/img/python-logo.svg' %}" width="193" height="203" alt="Логотип Python">
         <h3 class="inner-subtitle">Python</h3>
-        <ul class="skill-technology-python-libraries">
-          <li>asyncio</li>
-          <li>aiohttp</li>
-          <li>aiogram</li>
-        </ul>
       </div>
       <ul class="skills-technologies-list">
         <li class="skill-technology-item">
@@ -94,8 +95,8 @@
           Flask
         </li>
         <li class="skill-technology-item">
-          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/web2py.svg' %}" width="84" alt="Логотип Web2py">
-          Web2py
+          <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/fastapi.svg' %}" width="84" alt="Логотип FastAPI">
+          FastAPI
         </li>
         <li class="skill-technology-item">
           <img class="skill-technology-item-icon" src="{% static 'cvmainapp/img/docker.svg' %}" width="130" alt="Логотип Docker">
@@ -132,7 +133,7 @@
     <div class="projects-block-left">
       <div class="projects-text">
         <strong class="general-subtitle">Мои проекты</strong>
-        <h2 class="general-headline">Работы, которые я реализовал за последние 2 года</h2>
+        <h2 class="general-headline">Работы, которые я реализовал</h2>
       </div>
       <figure class="project-preview">
         <a class="project-preview-link" href="https://sm.e-svitlo.com.ua">
